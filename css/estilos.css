@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@200..900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+* {margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+ 
+}
+
+/* BARRA DE NAV */
+nav {
+  color: white;
+  background-color: #3165e8;
+  height: 19vh;
+  padding: 0 8.33vw;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 2s;
+  box-shadow: unset; 
+}
+
+a:hover {
+background-color: #3165e8;
+width: 150px; 
+height: 10px;
+}
+
+
+nav div {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a { 
+  text-align: center;
+  padding: 10;
+}
+
+h2.titulo { 
+  font-size: 50px;
+}
+
+
+h2.titulo:hover {
+color: #b6b6b8;
+font-size: 60px;
+transition: all 1s;
+
+}
+
+/* ICONO */
+.icon-icono-1 { 
+  color:#f2f2f2;
+  font-size: 5vh;
+}
+
+.icon-icono-1:hover { 
+  color:rgb(0,0,0);
+  cursor:pointer;
+  transition: 1s;
+}
+
+
+/* ICONO PARA QUE SEA RESPONSIVE */
+
+@media screen and (min-width: 800px) {
+  .nav-links {
+    display: flex;
+  }
+  nav div { 
+    display: none;
+  }
+  .icon-icono-1 { 
+    display: none;
+    
+  }
+}
+
+@media (max-width:992px) { 
+  .nav-links {
+    display: none;
+    width: 50%;
+    font-size: 12px;
+  }
+}
+
+
+/* HEADER */
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100vw;
+    padding: 0 8.33vw;
+    text-align: center;
+    justify-content: center;
+  }
+
+  header a { 
+    margin-top: 30px;
+    text-decoration: none;
+    color: #3165e8;
+    padding: 1%;
+    width: 200px;
+    height:10px;
+    border-radius: 15px;
+    text-transform: none;
+    justify-content: space-between;
+    transition: all 2s;
+    box-shadow: unset;
+  }
+
+  header a:hover {
+    background-color: #3165e8;
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 900;
+
+  }
+  
+/*
+  Boton*/
+
+
+  h1.saludo {
+    font-size: 60px;
+    font-family: 'Manrope',sans-serif;
+     box-shadow: unset;
+     transition: infinite;
+     box-shadow: unset;
+     padding:2vw;
+  }
+
+  h1.saludo:hover {
+    font-size: 60px;
+    font-family: 'Manrope',sans-serif;
+     box-shadow: unset;
+     transition: infinite;
+     box-shadow: unset;
+     padding:2vw;
+
+  }
+
+
+  h3.subtitulo {
+    text-align: center;
+    font-weight: 200;
+    padding: 2vw;
+  }
+
+  h3.subtitulo:hover {
+    text-align: center;
+    font-weight: 200;
+    padding: 2vw;
+    font-weight: 400;
+  }
+
+  .mostrar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: #708edb;
+    width: 100vw;
+    padding: 2vw;
+    font-size: 20px;
+    font-weight: 800;
+}
+  
+  /* PORTFOLIO */
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+ 
+  .portfolio {
+    padding: 40px 0;
+    background-color: #f2f2f2;
+  }
+  
+  .portfolio h1, h2 {
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+ 
+    margin-bottom: 30px;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    
+  }
+  
+  .card:hover, .card h3:hover, .card h4:hover { 
+    background-color: #3165e8;
+    transition: all 0.5s;
+    color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 7px;
+  }
+  
+  .card h3,
+  .card h4 {
+    text-align: center;
+  }
+
+  .card h3 { 
+ font-weight: 600;
+  }
+
+   .card h4 { 
+ font-weight: 300;
+  }
+  
+ 
+    /* RESPONSIVE LAS IMAGENES */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+}
+
+  @media screen and (max-width: 480px) {
+    .card {
+      width: calc(100% - 20px);
+      
+    }
+  }
+  section, video {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  /* FOOTER */
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    color: #333;
+  }
+  
+  p {
+    padding: 50px;
+    background-color: #f9f9f9;
+    color: #3165e8;
+    opacity: 80%;
+  }
+  
+  
+ 
